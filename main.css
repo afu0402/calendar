@@ -1,0 +1,105 @@
+body,div,h2,table {
+  margin:0;
+  padding:0;
+}
+@keyframes topA
+{
+0% {opacity: 0;top:150px}
+25%{opacity: 0;top:100px;}
+50%{opacity: 0;top:50px;}
+75%{opacity: 0.;top:25px;}
+100% {opacity: 1;top:0;}
+}
+.calendar-wrap {
+  color:#ffffff;
+  font-family: "黑体";
+  width:410px;
+  height:500px;
+  background:#A6293B;
+  border-radius:3px;
+  position:absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  border: 1px solid rgba(97,4,4,0.3);
+}
+.calendar-wrap .calendar-wrap-title {
+  line-height:45px;
+  height:45px;
+  color:#ffffff;
+  box-shadow:0 -6px 6px rgba(0, 0, 0,.2) inset;
+  text-align: center;
+}
+.calendar-wrap .calendar-wrap-title h2,.calendar-wrap .calendar-wrap-title span {
+  float:left;
+}
+.calendar-wrap .calendar-wrap-title span {
+  display:block;
+  width:58px;
+  height:100%;
+  font-weight:700;
+  font-size:16px;
+ font-family: "黑体";
+cursor: pointer;
+}
+.calendar-wrap .calendar-wrap-title h2 {
+  width:291px;
+  text-align:center;
+  border-left:1px solid rgba(97,4,4,0.3);
+  border-right:1px solid rgba(97,4,4,0.3);
+}
+.calendar-wrap table {
+  width:100%;
+  text-align:center;
+  border-collapse: collapse;
+  position:relative;
+  animation: topA .3s;
+}
+.calendar-wrap table th {
+  width:60px;
+  height:30px;
+  margin:0;
+  background:#CE4154;
+  font-weight:100;
+  box-shadow:0 6px 10px rgba(255,255,255,.2) inset;
+  
+}
+.calendar-wrap table th:nth-of-type(even) {
+  border-right:1px solid rgba(97,4,4,0.2);
+  border-left:1px solid rgba(97,4,4,0.2);
+}
+.calendar-wrap table tbody tr td {
+  background:#ffffff;
+  width:60px;
+  height:60px;
+  border:1px solid rgba(97,4,4,0.2);
+  color: #4e4e4e;
+  font-size:24px;
+  font-weight: 700;
+  font-family: "微软雅黑";
+}
+.calendar-wrap table tbody tr td:nth-of-type(1) {
+  border-left:none;
+}
+.calendar-wrap table tbody tr td:nth-of-type(7) {
+  border-right:none;
+}
+.calendar-wrap .today {
+  background:#A6293B;
+  box-shadow:2px 2px 4px rgba(0, 0, 0,.2) inset;
+  color:#ffffff;
+}
+.calendar-wrap .calendar-wrap-retuntoday {
+  background:#ffffff;
+  width:150px;
+  height:30px;
+  color: rgba(0,0,0,0.5);;
+  font-family: "微软雅黑";
+  font-weight:700;
+  text-align:center;
+  line-height:30px;
+  margin:20px auto;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0,.2);
+  cursor: pointer;
+}
+
